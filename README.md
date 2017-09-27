@@ -121,4 +121,65 @@
 		  "image" => "image",//可填
 		  "isSaler" => "1" //0 普通  1 销售
         );
+		*/
+		
+		//查看信用卡
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=getCredit";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "id"=>'5',
+		  "page"=>1,
+		  "authTime"=>time()
+        );
+		*/
+		//修改用户信息
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=update";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>5,
+		  "title"=>'信用卡2',
+		  "image"=>'image2',
+          "sketch" => "sketch2", //简要描述
+		  "bank"=>'bank2',
+		  "limit" => "10",//额度
+		  "describe" => "describe2",//可填
+		  "url" => "url2"//可填
+		  
+        );
+		*/
+		//删除用户信息
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=delete";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>10,
+        );
+		*/
+		//添加信用卡
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=add";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "title"=>'信用卡',
+		  "image"=>'image',
+          "sketch" => "sketch", //简要描述
+		  "bank"=>'bank',
+		  "limit" => "limit",//额度
+		  "describe" => "describe",//可填
+		  "url" => "url"//可填
+		  
+        );
 		*/`
