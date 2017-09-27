@@ -1,4 +1,4 @@
-								Api文档
+		`						Api文档
 		//登录
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=admin&m=login";
@@ -121,4 +121,4 @@
 		  "image" => "image",//可填
 		  "isSaler" => "1" //0 普通  1 销售
         );
-		*/
+		*/`
