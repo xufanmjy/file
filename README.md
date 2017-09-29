@@ -71,6 +71,7 @@
 		$post_data = array (
           "auth" => $auth,
 		  "authTime"=>time(),
+		  "page"=>'1',
 		  "isSaler"=> '',//0 普通  1 销售 （''或者不传） 全部
 		  "mobile"=>'23',//   ''或者不填  全部
 		  "status"=> ''//0 正常  1  禁止  （''或者不传） 全部
