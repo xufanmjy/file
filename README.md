@@ -197,7 +197,17 @@
 		  
 		);
 		*/
-		
+		//删除贷款信息
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=loan&m=delete";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>10,
+        );
+		*/
 		//查看贷款
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=loan&m=getLoan";
@@ -210,6 +220,7 @@
 		  "authTime"=>time()
         );
 		*/
+		
 		//修改贷款
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=loan&m=update";
