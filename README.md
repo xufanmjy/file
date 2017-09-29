@@ -307,4 +307,63 @@
 		  "other" => "other"
 		  
 		);
+		*/
+		//删除新闻
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=article&m=delete";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>10,
+        );
+		*/
+		//查看新闻
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=article&m=getArticle";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "id"=>'',
+		  "page"=>1,
+		  "authTime"=>time()
+        );
+		*/
+		//修改新闻
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=article&m=update";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>'1',
+		  "auth" => $auth,
+		  "authTime"=>time(),
+		  "title"=>'title2',
+		  "content"=>'content2',
+		  "type" => "2", //1 news 2 ad
+		  "image"=>'image2',//最大贷款金额
+		  "describe" => "describ2e",
+		  "label" => "2"
+        );
+		*/
+		//添加新闻
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=article&m=add";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+		  "auth" => $auth,
+		  "authTime"=>time(),
+		  "title"=>'title',
+		  "content"=>'content',
+		  "type" => "1", //1 news 2 ad
+		  "image"=>'image',//最大贷款金额
+		  "describe" => "describe",
+		  "label" => "1"
+		  
+		);
 		*/`
