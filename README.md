@@ -215,9 +215,10 @@
 		$post_data = array (
           "auth" => $auth,
 		  "authTime"=>time(),
+		  "page"=>3,
 		  "title"=> '',//卡名  模糊匹配
 		  "bank"=>'',//   银行卡名字  精确匹配的
-		  "status"=> '1'//0 正常  1  禁止  （''或者不传） 全部
+		  "status"=> ''//0 正常  1  禁止  （''或者不传） 全部
         );
 		*/
 		
