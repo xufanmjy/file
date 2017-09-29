@@ -197,6 +197,30 @@
 		  
 		);
 		*/
+		//查看信用卡银行
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=getBank";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+        );
+		*/
+		//收索信用卡
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=credit&m=search";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "title"=> '',//卡名  模糊匹配
+		  "bank"=>'',//   银行卡名字  精确匹配的
+		  "status"=> '1'//0 正常  1  禁止  （''或者不传） 全部
+        );
+		*/
+		
 		//删除贷款信息
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=loan&m=delete";
