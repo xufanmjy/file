@@ -222,7 +222,21 @@
 		  "status"=> ''//0 正常  1  禁止  （''或者不传） 全部
         );
 		*/
-		
+		//收索贷款
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=loan&m=search";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "page"=>1,
+		  "name"=> 'name',//卡名  模糊匹配
+		  "label4"=>'',
+		  "label6"=> '2',
+		  "status"=>'0' //0 正常 1禁止 
+        );
+		*/
 		//删除贷款信息
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=loan&m=delete";
