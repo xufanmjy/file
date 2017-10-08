@@ -380,4 +380,8 @@
 		  "label" => "1"
 		  
 		);
+		*/
+		/*
+		//ÉÏ´«Í¼Æ¬
+		http://127.0.0.1/api/api.php?c=upload&m=img
 		*/`
