@@ -384,4 +384,105 @@
 		/*
 		//上传图片
 		http://127.0.0.1/api/api.php?c=upload&m=img
-		*/`
+		*/
+		//查看回馈
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=feedback&m=getFeedback";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "id"=>'',
+		  "page"=>1,
+		  "authTime"=>time()
+        );
+		*/
+		//修改回馈
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=feedback&m=update";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>'1',
+		  "content"=>'二爷到此一游',
+		  "mobile"=>'11111111',
+		  "status"=>"1"//0 正常 1 禁止
+        );
+		*/
+		//添加贷款
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=feedback&m=add";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+		  "auth" => $auth,
+		  "authTime"=>time(),
+		  "content"=>'大爷到此一游',
+		  "mobile"=>'18222323233'
+		);
+		*/
+		//删除新闻
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=feedback&m=delete";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>5,
+        );
+		*/
+		//查看客服
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=customer&m=getCustomer";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "id"=>'',
+		  "page"=>1,
+		  "authTime"=>time()
+        );
+		*/
+		//修改客服
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=customer&m=update";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>'1',
+		  "name"=>'22222',
+		  "type"=>'2', // 1 微信  2 qq
+		  "num"=>'22222222',
+		  "status"=>"1"//0 正常 1 禁止
+        );
+		*/
+		//添加客服
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=customer&m=add";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+		  "auth" => $auth,
+		  "authTime"=>time(),
+		  "name"=>'鱼头坨',
+		  "type"=>'1', // 1 微信  2 qq
+		  "num"=>'443323432423'
+		);
+		*/
+		//删除客服
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=customer&m=delete";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>5,
+        );
+		*/
+		`
