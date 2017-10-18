@@ -446,6 +446,19 @@
 		  "authTime"=>time()
         );
 		*/
+		//收索客服
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=customer&m=search";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "id"=>'',
+		  "page"=>1,
+		  "type"=>1,
+		  "authTime"=>time()
+        );
+		*/
 		//修改客服
 		/*
 		$url = "http://127.0.0.1/api/api.php?c=customer&m=update";
