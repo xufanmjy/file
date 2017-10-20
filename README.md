@@ -498,4 +498,18 @@
 		  "id"=>5,
         );
 		*/
+		//修改贷款排序
+		/*
+		$url = "http://127.0.0.1/api/api.php?c=loan&m=sortById";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "id"=>'1,2,3,4,5,6,7',
+		  "sortId"=>'1,2,3,4,5,6,7'
+        );
+		*/
+		//导出execl的mobile
+		//$url = "http://127.0.0.1/api/api.php?c=download&m=execl";
 		`
