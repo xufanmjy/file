@@ -520,6 +520,7 @@
 		$post_data = array (
           "auth" => $auth,
 		  "title"=>'3',
+		  "type"=>'2',
 		  "page"=>'1',
 		  "authTime"=>time()
         );
