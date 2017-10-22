@@ -512,4 +512,15 @@
 		*/
 		//导出execl的mobile
 		//$url = "http://127.0.0.1/api/api.php?c=download&m=execl";
+		
+		//搜索新闻
+		$url = "http://127.0.0.1/api/api.php?c=article&m=search";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "title"=>'3',
+		  "page"=>'1',
+		  "authTime"=>time()
+        );
 		`
