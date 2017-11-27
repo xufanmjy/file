@@ -524,4 +524,13 @@
 		  "page"=>'1',
 		  "authTime"=>time()
         );
+		//发送短信接口
+		$url = "http://127.0.0.1/api/api.php?c=SMS&m=sendSMS";
+		$code='9561e4a736e89d89';
+		$auth=md5('api_'.$code.time());
+		$post_data = array (
+          "auth" => $auth,
+		  "authTime"=>time(),
+		  "mobile"=>'18382076966'
+        );
 		`
